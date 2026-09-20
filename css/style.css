@@ -307,340 +307,62 @@ hero::before {
    - imagem mobile visível e imagem desktop oculta.
    ========================================================= */
     @media (max-width: 1400px) {
-       /* Posicionamento da imagem de fundo do Hero. */
-       #hero {
-           background-position: 65% center;
-       }
-   
-       /* Conteúdo do Hero: ocupa menos largura para
-          não sobrepor o copo de cerveja. */
-       .hero-conteudo {
-           width: 55%;
-           padding: 0 10px;
-           margin: 0;
-           
-       }
-       .hero-conteudo h1 {
-           font-size: 80px;
-           max-width: 220px;
-           transform: translate(120px,-210px);
-           text-shadow: 0 2px 7px rgba(0,0,0,1);
-           
-       }
-       .hero-conteudo h1 span {
-           font-size: 140px;
-       }
-   
-       .hero-conteudo p {
-           font-size: 24px;
-           max-width: 240px;
-           transform: translate(120px,-190px);
-           text-shadow: 0 2px 7px rgba(0,0,0,1);
-       }
-   
-       .botao-sobre {
-           width: 300px;
-           font-size: 30px;
-           transform: translate(120px,-140px);
-       }
-   
-       /* Seção Sobre em 1 coluna. */
-       #sobre {
-           grid-template-columns: minmax(0, 1fr);
-           padding: 40px 20px;
-           gap: 25px;
-       }
-   
-       /* No mobile, esconde a imagem desktop e mostra
-          a versão mobile. */
-       .sobre-imagem {
-           display: none;
-       }
-       .sobre-imagem-mobile {
-           display: block;
-           width: 100%;
-           max-width: 100%;
-           height: 250px;
-           border-radius: 4px;
-           margin: 15px 0;
-       }
-       .sobre-imagem-mobile img {
-           display: block;
-           width: 100%;
-           max-width: 100%;
-           height: 100%;
-           object-fit: cover;
-           box-sizing: border-box;
-       }
-       #sobre .sobre-imagem-mobile {
-           display: block;
-       }
-       #sobre .sobre-imagem {
-           display: none;
-       }
-       
-   
-       /* Ajuste dos cards de características no mobile:
-          - 3 cards lado a lado;
-          - cada card com largura controlada e texto encaixado;
-          - sem overflow horizontal. */
-       .caracteristicas {
-           gap: 10px;
-       }
-       .caracteristica {
-           flex: 1 1 0;
-           padding: 16px 10px;
-           max-width: 100%;
-       }
-       .caracteristica h4 {
-           font-size: 20px;
-           line-height: 1.25;
-           word-break: break-word;
-       }
-       .caracteristica img {
-        
-           width: 40px;
-       }
-   }@media (max-width: 768px) {
-       /* Posicionamento da imagem de fundo do Hero. */
-       #hero {
-           background-position: 65% center;
-       }
-   
-       /* Conteúdo do Hero: ocupa menos largura para
-          não sobrepor o copo de cerveja. */
-       .hero-conteudo {
-           width: 55%;
-           padding: 0 10px;
-           margin: 0;
-           
-       }
-       .hero-conteudo h1 {
-           font-size: 30px;
-           max-width: 220px;
-           transform: translate(60px,-200px);
-           text-shadow: 0 2px 7px rgba(0,0,0,1);
-           
-       }
-       .hero-conteudo h1 span {
-           font-size: 80px;
-       }
-   
-       .hero-conteudo p {
-           font-size: 24px;
-           max-width: 200px;
-           transform: translate(60px,-190px);
-           text-shadow: 0 2px 7px rgba(0,0,0,1);
-       }
-   
-       .botao-sobre {
-           width: 300px;
-           transform: translate(30px,-140px);
-       }
-   
-       /* Seção Sobre em 1 coluna. */
-       #sobre {
-           grid-template-columns: minmax(0, 1fr);
-           padding: 40px 20px;
-           gap: 25px;
-       }
-   
-       /* No mobile, esconde a imagem desktop e mostra
-          a versão mobile. */
-       .sobre-imagem {
-           display: none;
-       }
-       .sobre-imagem-mobile {
-           display: block;
-           width: 100%;
-           max-width: 100%;
-           height: 250px;
-           border-radius: 4px;
-           margin: 15px 0;
-       }
-       .sobre-imagem-mobile img {
-           display: block;
-           width: 100%;
-           max-width: 100%;
-           height: 100%;
-           object-fit: cover;
-           box-sizing: border-box;
-       }
-       #sobre .sobre-imagem-mobile {
-           display: block;
-       }
-       #sobre .sobre-imagem {
-           display: none;
-       }
-   
-       /* Ajuste dos cards de características no mobile:
-          - 3 cards lado a lado;
-          - cada card com largura controlada e texto encaixado;
-          - sem overflow horizontal. */
-       .caracteristicas {
-           gap: 10px;
-       }
-       .caracteristica {
-           flex: 1 1 0;
-           padding: 16px 10px;
-           max-width: 100%;
-       }
-       .caracteristica h4 {
-           font-size: 16px;
-           line-height: 1.25;
-           word-break: break-word;
-       }
-       .caracteristica img {
-        
-           width: 40px;
-       }
-   }
-    
-   @media (max-width: 460px) {
-       /* Posicionamento da imagem de fundo do Hero. */
-       #hero {
-           background-position: 65% center;
-       }
-   
-       /* Conteúdo do Hero: ocupa menos largura para
-          não sobrepor o copo de cerveja. */
-       .hero-conteudo {
-           width: 55%;
-           padding: 0 10px;
-           margin: 0;
-           
-       }
-       .hero-conteudo h1 {
-           font-size: 30px;
-           max-width: 220px;
-           transform: translate(8px,-180px);
-           text-shadow: 0 2px 7px rgba(0,0,0,1);
-           
-       }
-       .hero-conteudo h1 span {
-           font-size: 60px;
-       }
-   
-       .hero-conteudo p {
-           font-size: 18px;
-           max-width: 200px;
-           transform: translate(8px,-180px);
-           text-shadow: 0 2px 7px rgba(0,0,0,1);
-       }
-   
-       .botao-sobre {
-           width: 150px;
-           font-size: 14px;
-           transform: translateY(-140px);
-       }
-   
-       /* Seção Sobre em 1 coluna. */
-       #sobre {
-           grid-template-columns: minmax(0, 1fr);
-           padding: 40px 20px;
-           gap: 25px;
-       }
-   
-       /* No mobile, esconde a imagem desktop e mostra
-          a versão mobile. */
-       .sobre-imagem {
-           display: none;
-       }
-       .sobre-imagem-mobile {
-           display: block;
-           width: 100%;
-           max-width: 100%;
-           height: 250px;
-           border-radius: 4px;
-           margin: 15px 0;
-       }
-       .sobre-imagem-mobile img {
-           display: block;
-           width: 100%;
-           max-width: 100%;
-           height: 100%;
-           object-fit: cover;
-           box-sizing: border-box;
-       }
-       #sobre .sobre-imagem-mobile {
-           display: block;
-       }
-       #sobre .sobre-imagem {
-           display: none;
-       }
-   
-       /* Ajuste dos cards de características no mobile:
-          - 3 cards lado a lado;
-          - cada card com largura controlada e texto encaixado;
-          - sem overflow horizontal. */
-       .caracteristicas {
-           gap: 10px;
-       }
-       .caracteristica {
-           flex: 1 1 0;
-           padding: 16px 10px;
-           max-width: 100%;
-       }
-       .caracteristica h4 {
-           font-size: 12px;
-           line-height: 1.25;
-           word-break: break-word;
-       }
-       .caracteristica img {
-           width: 40px;
-       }
-   }
-@media (max-width: 360px) {
-    /* Posicionamento da imagem de fundo do Hero. */
     #hero {
+        background-position: 65% center;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero {
+        min-height: calc(100vh - 80px);
         background-position: 65% center;
         overflow: hidden;
     }
 
-    /* Conteúdo do Hero: ocupa menos largura para
-       não sobrepor o copo de cerveja. */
     .hero-conteudo {
-        width: 55%;
-        padding: 0 10px;
+        width: 100%;
+        max-width: none;
+        padding: 0 24px;
         margin: 0;
-        
     }
+
     .hero-conteudo h1 {
-        font-size: 16px;
-        max-width: 220px;
-        transform: translate(8px,-160px);
+        font-size: 22px;
+        max-width: 260px;
+        transform: none;
         text-shadow: 0 2px 7px rgba(0,0,0,0.95);
-        
     }
+
     .hero-conteudo h1 span {
-        font-size: 60px;
+        font-size: 64px;
     }
 
     .hero-conteudo p {
-        font-size: 16px;
-        max-width: 200px;
-        transform: translate(8px,-160px);
-        text-shadow: 0 2px 7px rgba(0,0,0,1);
+        font-size: 17px;
+        max-width: 230px;
+        margin-top: 24px;
+        transform: none;
+        text-shadow: 0 2px 7px rgba(0,0,0,0.95);
     }
 
     .botao-sobre {
-        width: 140px;
-        font-size: 12px;
+        width: 170px;
+        font-size: 14px;
+        margin-top: 24px;
+        transform: none;
     }
 
-    /* Seção Sobre em 1 coluna. */
     #sobre {
         grid-template-columns: minmax(0, 1fr);
         padding: 40px 20px;
         gap: 25px;
     }
 
-    /* No mobile, esconde a imagem desktop e mostra
-       a versão mobile. */
-    .sobre-imagem {
+    #sobre .sobre-imagem {
         display: none;
     }
-    .sobre-imagem-mobile {
+
+    #sobre .sobre-imagem-mobile {
         display: block;
         width: 100%;
         max-width: 100%;
@@ -648,7 +370,8 @@ hero::before {
         border-radius: 4px;
         margin: 15px 0;
     }
-    .sobre-imagem-mobile img {
+
+    #sobre .sobre-imagem-mobile img {
         display: block;
         width: 100%;
         max-width: 100%;
@@ -656,32 +379,157 @@ hero::before {
         object-fit: cover;
         box-sizing: border-box;
     }
-    #sobre .sobre-imagem-mobile {
-        display: block;
-    }
-    #sobre .sobre-imagem {
-        display: none;
-    }
 
-    /* Ajuste dos cards de características no mobile:
-       - 3 cards lado a lado;
-       - cada card com largura controlada e texto encaixado;
-       - sem overflow horizontal. */
     .caracteristicas {
         gap: 10px;
     }
+
     .caracteristica {
         flex: 1 1 0;
         padding: 16px 10px;
         max-width: 100%;
     }
+
     .caracteristica h4 {
-        font-size: 11px;
+        font-size: 16px;
         line-height: 1.25;
         word-break: break-word;
     }
+
     .caracteristica img {
         width: 40px;
     }
 }
 
+@media (max-width: 460px) {
+    #hero {
+        background-position: 67% center;
+    }
+
+    .hero-conteudo {
+        padding: 0 20px;
+    }
+
+    .hero-conteudo h1 {
+        font-size: 20px;
+        max-width: 230px;
+        transform: translateY(-145px);
+        text-shadow: 0 2px 7px rgba(0, 0, 0, 0.95);
+    }
+
+    .hero-conteudo h1 span {
+        font-size: 50px;
+        text-shadow: 0 2px 7px rgba(0, 0, 0, 0.95);
+    }
+
+    .hero-conteudo p {
+        font-size: 16px;
+        max-width: 190px;
+        margin-top: 22px;
+        transform: translateY(-150px);
+        text-shadow: 0 2px 7px rgba(0, 0, 0, 0.95);
+    }
+
+    .botao-sobre {
+        height: 55px;
+        width: 120px;
+        font-size: 12px;
+        margin-top: 22px;
+        transform: translateY(-115px);
+    }
+
+    #sobre {
+        padding: 35px 16px;
+        gap: 20px;
+    }
+
+    #sobre h3 {
+        font-size: 30px;
+    }
+
+    #sobre p {
+        font-size: 16px;
+    }
+
+    .sobre-imagem-mobile {
+        height: 240px;
+    }
+
+    .caracteristicas {
+        gap: 4px;
+    }
+
+    .caracteristica {
+        padding: 14px 5px;
+    }
+
+    .caracteristica h4 {
+        font-size: 12px;
+    }
+
+    .caracteristica img {
+        width: 36px;
+    }
+}
+
+@media (max-width: 360px) {
+    #hero {
+        background-position: 65% center;
+    }
+
+    .hero-conteudo h1 {
+    font-size: 20px;
+    max-width: 210px;
+    transform: translate(-8px,-135px);
+    text-shadow: 0 2px 7px rgba(0, 0, 0, 0.95);
+    }
+
+    .hero-conteudo h1 span {
+        font-size: 50px;
+        text-shadow: 0 2px 7px rgba(0, 0, 0, 0.95);
+    }
+
+    .hero-conteudo p {
+        font-size: 15px;
+        max-width: 190px;
+        margin-top: 22px;
+        transform: translate(-8px,-130px);
+        text-shadow: 0 2px 7px rgba(0, 0, 0, 0.95);
+    }
+
+    .botao-sobre {
+        height: 50px;
+        width: 120px;
+        font-size: 12px;
+        margin-top: 22px;
+        transform: translate(-8px,-100px);
+    }
+
+    #sobre {
+        padding: 30px 14px;
+    }
+
+    #sobre h3 {
+        font-size: 27px;
+    }
+
+    #sobre p {
+        font-size: 15px;
+    }
+
+    .sobre-imagem-mobile {
+        height: 220px;
+    }
+
+    .caracteristica {
+        padding: 12px 4px;
+    }
+
+    .caracteristica h4 {
+        font-size: 11px;
+    }
+
+    .caracteristica img {
+        width: 34px;
+    }
+}
